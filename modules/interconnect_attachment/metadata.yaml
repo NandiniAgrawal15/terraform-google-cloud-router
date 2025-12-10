@@ -99,6 +99,14 @@ spec:
         description: Whether to create router interface (and peer) for this attachment. Set this to false for PARTNER type.
         varType: bool
         defaultValue: true
+      - name: stack_type
+        type: string
+        description: |
+          The stack type for this interconnect attachment to identify whether the IPv6
+          feature is enabled or not. If not specified, IPV4_ONLY will be used.
+          This field can be both set at interconnect attachments creation and update
+          interconnect attachment operations.
+        defaultValue: IPV4_ONLY
       - name: interface
         description: Interface to deploy for this attachment.
         varType: |-

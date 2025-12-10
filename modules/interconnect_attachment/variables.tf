@@ -70,6 +70,12 @@ variable "edge_availability_domain" {
   default     = null
 }
 
+variable "stack_type" {
+  description = "The stack type for this interconnect attachment. Possible values are IPV4_ONLY and IPV4_IPV6."
+  type        = string
+  default     = "IPV4_ONLY"
+}
+
 variable "description" {
   type        = string
   description = "An optional description of this resource"
